@@ -13,9 +13,9 @@ RUN yum install -y unzip
 RUN mkdir /panw-apps
 
 # Download the latest stable Palo Alto Networks App for Splunk
-RUN wget -O /SplunkforPaloAltoNetworks.zip https://github.com/PaloAltoNetworks-BD/SplunkforPaloAltoNetworks/archive/master.zip
+RUN wget -O /SplunkforPaloAltoNetworks.zip https://github.com/PaloAltoNetworks-BD/SplunkforPaloAltoNetworks/archive/v4.2.2.zip
 RUN unzip /SplunkforPaloAltoNetworks.zip -d /panw-apps/
-RUN mv /panw-apps/SplunkforPaloAltoNetworks-master /panw-apps/SplunkforPaloAltoNetworks
+RUN mv /panw-apps/SplunkforPaloAltoNetworks-4.2.2 /panw-apps/SplunkforPaloAltoNetworks
 RUN rm -f /SplunkforPaloAltoNetworks.zip
 
 # Download the latest stable Palo Alto Networks data generator app for Splunk
