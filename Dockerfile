@@ -19,9 +19,9 @@ RUN mv /panw-apps/SplunkforPaloAltoNetworks-4.2.2 /panw-apps/SplunkforPaloAltoNe
 RUN rm -f /SplunkforPaloAltoNetworks.zip
 
 # Download the latest stable Palo Alto Networks data generator app for Splunk
-RUN wget -O /pan_datagen.zip https://github.com/PaloAltoNetworks-BD/Splunk-App-Data-Generator/archive/master.zip
+RUN wget -O /pan_datagen.zip https://github.com/PaloAltoNetworks-BD/Splunk-App-Data-Generator/archive/v2.3.zip
 RUN unzip /pan_datagen.zip -d /panw-apps/
-RUN mv /panw-apps/Splunk-App-Data-Generator-master /panw-apps/pan_datagen
+RUN mv /panw-apps/Splunk-App-Data-Generator-2.3 /panw-apps/pan_datagen
 RUN rm -f /pan_datagen.zip
 
 # Add 514/udp syslog input to app
